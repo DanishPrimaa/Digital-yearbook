@@ -45,8 +45,18 @@ body {
     mask-image: linear-gradient(to bottom, transparent 0%, black 15%, black 85%, transparent 100%);
   }
 
-  
-
+  .container-3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    padding: 30px 5px;
+    background-image: url('images/gelombang-biru.png');
+    background-repeat: no-repeat;
+    background-size: cover; /* Tambahkan baris ini */
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 15%, black 85%, transparent 100%);
+    mask-image: linear-gradient(to bottom, transparent 0%, black 15%, black 85%, transparent 100%);
+}
   .container-4 {
     display: flex;
     flex-wrap: wrap;
@@ -60,7 +70,6 @@ body {
   
   .photo-card {
     width: 280px;
-    min-height: 350px;
     max-height: max-content;
     background: linear-gradient(to bottom, #d7f1ff, #f3f3f3);
     border-radius: 13px;
@@ -97,6 +106,7 @@ body {
   
   .photo-card img {
     width: 100%;
+    max-height: 80%;
     display: block;
     border-radius: 10px;
   }
@@ -247,4 +257,32 @@ body {
     margin-top: 10px;
     font-size: 0.9em;
     color: #333;
+  }
+
+  .kesan {
+    width: fit-content;
+    max-height: max-content;
+    border-radius: 13px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+    padding: 8px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px); /* Blur effect */
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+    border: 1px solid rgba(255, 255, 255, 0.18); /* Border with transparency */
+    margin: 20px 30px; /* Jarak atas dan bawah 20px, kiri dan kanan 30px */
+}
+
+  .kesan:hover {
+    transform: scale(1.05);
+  }
+
+  .pesan {
+    font-family: poppins, sans-serif;
+    color: #d7f1ff;
+    padding: 0px;
+    text-align: center;
+    font-weight: medium;
+    font-size: 1.2em;
   }
