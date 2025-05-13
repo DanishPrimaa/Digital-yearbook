@@ -291,3 +291,33 @@ body {
     font-weight: bold;
     font-size: 1.1em;
   }
+
+  .video-wrapper {
+  display: flex;
+  flex-direction: column; /* <-- ini penting agar iframe dan tombol tersusun vertikal */
+  align-items: center;     /* agar elemen di tengah */
+  gap: 12px;               /* jarak antar elemen */
+  margin: 40px 0;
+}
+
+.video-wrapper iframe {
+  width: 360px;
+  height: 202px;
+  max-width: 90vw;         /* agar responsif di layar kecil */
+}
+
+.youtube-button {
+  padding: 10px 20px;
+  background-color: #ff0000;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.youtube-button:hover {
+  background-color: #a70000;
+  transform: scale(1.05);
+}
